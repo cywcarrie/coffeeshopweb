@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrie's Coffee</title>
+    <link rel="icon" type="image/png" href="./images/logo_icon.png">
+    <link rel="stylesheet" href="./coffee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <h4 class="logo"><i class="fa-solid fa-c"></i>Carrie's <span>Coffee</span></h4>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="header-icon">
+            <div class='fa-solid fa-cart-shopping' id="cart-icon"></div>
+            <div class='fa-solid fa-bars' id="menu-icon"></div>
+        </div>
+        <div class="cart">
+            <h3 class="cart-title">Your Cart</h3>
+            <div class="cart-content">
+            </div>
+
+            <!--Cart-Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <!--Cart-Buy-Button-->
+            <button type="button" class="btn-buy">Buy Now</button>
+
+            <!--Cart-Close-->
+            <i class="fa-solid fa-x" id="close-cart"></i>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-intro">
+                <h1>Carrie's Coffee Shop</h1>
+                <h3>Enjoy your coffee !</h3>
+                <a class="home-btn" href="#about">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About <span>US</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/coffee.jpg" alt="">
+                </div>
+                <div class="infor">
+                    <h3>Welcome to<br><span>Carrie's Coffee</span></h3>
+                    <p>We ensure our coffee has all the great taste and quality. 
+                        Hoping you will enjoy it.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section id="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <h2>Me<span>nu</span></h2>
+            </div>
+            <div class="menu-content">
+                <!--Box1-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Americano</h3>
+                    <span class="price">$3</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+
+                <!--Box2-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Latte</h3>
+                    <span class="price">$3.5</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+
+                <!--Box3-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Mocha</h3>
+                    <span class="price">$4</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+
+                <!--Box4-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Cappuccino</h3>
+                    <span class="price">$3.5</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+
+                <!--Box5-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Espresso</h3>
+                    <span class="price">$2.5</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+
+                <!--Box6-->
+                <div class="menu-box">
+                    <img src="./images/coffee1.png" alt = "" class="product-img">
+                    <h3 class="menu-title">Macchiato</h3>
+                    <span class="price">$4.5</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact-->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Con<span>tact</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-box">
+                    <h4 class="title">Customer Service</h4>
+                    <h5>Mon. &ndash; Sun.</h5>
+                    <p>8:00 &ndash; 22:00</p>
+                </div>
+                <div class="contact-box" id="contact-infor">
+                    <h4 class="title">Information</h4>
+                    <p>Call Us | + 123 - 456 - 789</p>  
+                    <p>Email | example@mail.com</p>                             
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>&#8211; Developed by Carrie Chen &#8211;</p>
+    </div>
+
+    <!--JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="./coffee.js"></script>
+</body>
+</html>
